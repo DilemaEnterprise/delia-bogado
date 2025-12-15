@@ -168,7 +168,7 @@
     .step b{display:inline-block; margin-bottom:6px}
     .step p{margin:0; color:var(--muted); font-size:.95rem}
     .proof{
-      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px;
     }
     .quote{
       padding:18px;
@@ -177,6 +177,7 @@
       border:1px solid rgba(255,255,255,.10);
     }
     .quote p{margin:0 0 10px; color:var(--text)}
+    .stars{letter-spacing:2px; font-weight:900; margin:0 0 8px; font-size:1.05rem;}
     .quote small{color:var(--muted); font-weight:700}
     details{
       border:1px solid rgba(255,255,255,.10);
@@ -287,7 +288,7 @@
       <div class="card">
         <div class="photo">
           <!-- Troque o src abaixo pela sua foto (ex.: assets/delia.jpg) -->
-          <img src="assets/placeholder-photo.svg" alt="Foto da Delia Bogado / Consultório" />
+          <img src="assets/Delia-Bogado.webp" alt="Foto da Delia Bogado / Consultório" />
           <b>Foto da Delia / consultório (trocar)</b>
         </div>
         <div class="card-body">
@@ -417,25 +418,59 @@
   <!-- PROVAS -->
   <section id="depoimentos">
     <div class="wrap">
-      <h2 class="sec-title">Depoimentos (prova social)</h2>
-      <p class="sec-sub">Troque pelos seus depoimentos reais (texto ou prints).</p>
+      <h2 class="sec-title">Avaliações 5★ no Google</h2>
+      <p class="sec-sub">Comentários reais de pacientes — atendimento humanizado, atencioso e eficaz.</p>
 
       <div class="proof">
         <div class="quote">
-          <p>“[DEPOIMENTO 1]”</p>
-          <small>— Paciente, [inicial], [idade]</small>
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Incrível atendimento da Delia, já senti o resultado logo na primeira sessão. Recomendo.”</p>
+          <small>— Rafael Altenhofen (Google)</small>
         </div>
         <div class="quote">
-          <p>“[DEPOIMENTO 2]”</p>
-          <small>— Paciente, [inicial], [idade]</small>
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Super indico a Délia!! Uma excelente profissional, dedicada, atenciosa e extremamente competente no que faz. Uma verdadeira referência 🥰🥰🥰”</p>
+          <small>— Kelly Mota (Google)</small>
         </div>
         <div class="quote">
-          <p>“[DEPOIMENTO 3]”</p>
-          <small>— Paciente, [inicial], [idade]</small>
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“A Delia é uma ótima profissional, competente e muito atenciosa. Gratidão por me atender com tanto carinho!”</p>
+          <small>— Patricia Schwarz – Ser Consciência (Google)</small>
         </div>
         <div class="quote">
-          <p>“[DEPOIMENTO 4]”</p>
-          <small>— Paciente, [inicial], [idade]</small>
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Excelente profissional, muito atenciosa e cuidadosa durante o procedimento. Trabalho impecável e muito eficaz!”</p>
+          <small>— Denise Antunes (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Excelente profissional! comprometida, trazendo um atendimento individualizado com excelência e dedicação para cada paciente. Indico!”</p>
+          <small>— cleo lopes (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Muito bom poder ser cuidada por uma pessoa de Deus e de competência!”</p>
+          <small>— Heloisa Entringe (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Uma profissional dedicada com muito conhecimento no que faz.”</p>
+          <small>— Shelly Christine (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Uma experiência ótima! Amei o trabalho ✨”</p>
+          <small>— Kauane Souza (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Excelente profissional.”</p>
+          <small>— Lu Barbosa Sonnemann (Google)</small>
+        </div>
+        <div class="quote">
+          <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          <p>“Simplesmente maravilhosa!”</p>
+          <small>— Geni Aparecida Volenitz (Google)</small>
         </div>
       </div>
 
