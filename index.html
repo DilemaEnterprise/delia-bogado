@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delia Bogado | Auriculoterapia e Acupuntura Craniana em Cascavel - PR</title>
+  <meta name="description" content="Atendimento humanizado com auriculoterapia e acupuntura craniana para dores, ansiedade, estresse e insônia. Agende pelo WhatsApp." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Delia Bogado | Auriculoterapia e Acupuntura Craniana" />
+  <meta property="og:description" content="Atendimento humanizado para dores, ansiedade, estresse e insônia. Agende pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.svg" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1621;
+      --muted:#a8b3c2;
+      --text:#eaf0f7;
+      --brand:#6ee7b7;
+      --brand2:#60a5fa;
+      --danger:#fb7185;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 18px 45px rgba(0,0,0,.45);
+      --radius: 18px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(96,165,250,.20), transparent 60%),
+                  radial-gradient(1000px 700px at 90% 0%, rgba(110,231,183,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .nav{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.62);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px;
+    }
+    .dot{width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg,var(--brand),var(--brand2))}
+    .nav-links{display:flex; gap:16px; align-items:center}
+    .nav-links a{opacity:.88; text-decoration:none; font-weight:600; font-size:.95rem}
+    .nav-links a:hover{opacity:1}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-weight:800;
+      gap:10px;
+      cursor:pointer;
+      transition: transform .08s ease, background .2s ease, border .2s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22)}
+    .btn-primary{
+      border:none;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#07111a;
+      box-shadow: 0 12px 30px rgba(96,165,250,.18);
+    }
+    .btn-danger{
+      border:none;
+      background: linear-gradient(135deg, var(--danger), #fbbf24);
+      color:#1a0b0f;
+    }
+    .hero{padding:56px 0 26px}
+    .hero-grid{
+      display:grid; grid-template-columns: 1.2fr .8fr;
+      gap:24px; align-items:stretch;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-weight:700;
+      font-size:.92rem;
+      width:fit-content;
+    }
+    h1{margin:14px 0 10px; font-size: 2.35rem; line-height:1.05}
+    .sub{color:var(--muted); font-size:1.06rem; max-width:58ch}
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 22px}
+    .badge{
+      padding:9px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      font-weight:800; font-size:.92rem;
+    }
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .small{color:var(--muted); font-size:.92rem; margin-top:10px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .photo{
+      aspect-ratio: 4/3;
+      background:
+        radial-gradient(700px 280px at 30% 10%, rgba(110,231,183,.25), transparent 60%),
+        radial-gradient(700px 280px at 70% 0%, rgba(96,165,250,.20), transparent 62%),
+        rgba(255,255,255,.04);
+      border-bottom:1px solid rgba(255,255,255,.10);
+      display:flex; align-items:flex-end; justify-content:flex-start;
+      padding:18px;
+      position:relative;
+    }
+    .photo img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:.92;
+      filter:saturate(1.02);
+    }
+    .photo b{
+      position:relative;
+      background: rgba(11,15,20,.58);
+      padding:10px 12px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      font-size:.95rem;
+    }
+    .card-body{padding:18px}
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .mini{
+      padding:16px; border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .mini h3{margin:0 0 6px; font-size:1rem}
+    .mini p{margin:0; color:var(--muted); font-size:.95rem}
+    section{padding:34px 0}
+    .sec-title{font-size:1.6rem; margin:0 0 8px}
+    .sec-sub{color:var(--muted); margin:0 0 18px; max-width:70ch}
+    .two{
+      display:grid; grid-template-columns: 1fr 1fr; gap:18px;
+    }
+    ul.clean{margin:0; padding-left:18px; color:var(--muted)}
+    ul.clean li{margin:10px 0}
+    .steps{display:grid; grid-template-columns: repeat(4, 1fr); gap:14px}
+    .step{
+      padding:16px; border-radius:16px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .step b{display:inline-block; margin-bottom:6px}
+    .step p{margin:0; color:var(--muted); font-size:.95rem}
+    .proof{
+      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+    }
+    .quote{
+      padding:18px;
+      border-radius:16px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .quote p{margin:0 0 10px; color:var(--text)}
+    .quote small{color:var(--muted); font-weight:700}
+    details{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      border-radius:16px;
+      padding:14px 16px;
+    }
+    details + details{margin-top:12px}
+    summary{cursor:pointer; font-weight:900}
+    .footer{
+      padding:24px 0 50px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      margin-top:30px;
+    }
+    .floating{
+      position:fixed; right:16px; bottom:16px; z-index:60;
+      display:flex; gap:10px; flex-direction:column;
+    }
+    .chip{
+      display:none;
+      padding:10px 12px; border-radius:999px;
+      background: rgba(11,15,20,.70);
+      border:1px solid rgba(255,255,255,.12);
+      color:var(--muted);
+      font-weight:800;
+    }
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .two{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .nav-links a{display:none}
+      .chip{display:inline-flex}
+    }
+    @media (max-width: 520px){
+      h1{font-size:2.0rem}
+      .steps{grid-template-columns:1fr}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Delia Bogado — Auriculoterapia e Acupuntura Craniana",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Brasil, 5964 - Sala 121 - 12° andar - Centro",
+      "addressLocality": "Cascavel",
+      "addressRegion": "PR",
+      "postalCode": "85801-100",
+      "addressCountry": "BR"
+    },
+    "telephone": "+55 45 99818-7171",
+    "url": "https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.",
+    "sameAs": ["https://www.instagram.com/deliabogadoterapeuta/"]
+  }
+  </script>
+
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Delia Bogado</span>
+      </div>
+      <div class="nav-links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+        <a class="btn btn-primary" href="#agendar">Agendar no WhatsApp</a>
+      </div>
+      <span class="chip">Toque no botão para agendar</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Atendimento humanizado • Terapias integrativas</div>
+        <h1>Quando o corpo grita em dor, não dá pra “se acostumar”.</h1>
+        <p class="sub">
+          Auriculoterapia e Acupuntura Craniana com plano personalizado para ajudar em
+          <b>dores</b>, <b>ansiedade</b>, <b>estresse</b> e <b>insônia</b> — com escuta real e acompanhamento.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Avaliação no 1º atendimento</span>
+          <span class="badge">Protocolo personalizado</span>
+          <span class="badge">Foco em qualidade de vida</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" id="agendar" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Quero agendar pelo WhatsApp</a>
+          <a class="btn" href="#como-funciona">Ver como funciona</a>
+        </div>
+        <p class="small">
+          📍 Atendimento em <b>Cascavel - PR</b> • ⏱️ Resposta rápida no WhatsApp • *Resultados variam de pessoa para pessoa.*
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <!-- Troque o src abaixo pela sua foto (ex.: assets/delia.jpg) -->
+          <img src="assets/placeholder-photo.svg" alt="Foto da Delia Bogado / Consultório" />
+          <b>Foto da Delia / consultório (trocar)</b>
+        </div>
+        <div class="card-body">
+          <div class="grid3">
+            <div class="mini">
+              <h3>Escuta + técnica</h3>
+              <p>Você não é “mais um caso”. Aqui existe acolhimento e direção.</p>
+            </div>
+            <div class="mini">
+              <h3>Sem enrolação</h3>
+              <p>Explico o caminho, o objetivo e o que vamos fazer em cada etapa.</p>
+            </div>
+            <div class="mini">
+              <h3>Plano claro</h3>
+              <p>Você sai com um plano de cuidado e acompanhamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DOR / IDENTIFICAÇÃO -->
+  <section>
+    <div class="wrap two">
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">Você sente que seu corpo está pedindo socorro?</h2>
+        <p class="sec-sub">Se você se identificou com 2 ou mais itens abaixo, vale conversar comigo:</p>
+        <ul class="clean">
+          <li>Dor que vai e volta e já virou “rotina”</li>
+          <li>Ansiedade que acelera pensamentos e cansa o corpo</li>
+          <li>Insônia ou sono leve (acorda pior do que dormiu)</li>
+          <li>Tensão muscular, estresse e sensação de “pilha ligada”</li>
+          <li>Você já tentou de tudo e só quer melhorar de verdade</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">O objetivo aqui é simples:</h2>
+        <p class="sec-sub">
+          ajudar você a recuperar <b>bem-estar</b>, reduzir incômodos e ganhar
+          <b>mais leveza no dia a dia</b>, com uma abordagem integrativa e personalizada.
+        </p>
+        <a class="btn btn-danger" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Me chama no WhatsApp agora</a>
+        <p class="small">
+          *Atendimento integrativo. Não substitui avaliação/ acompanhamento médico quando necessário.*
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="wrap">
+      <h2 class="sec-title">Como funciona o atendimento</h2>
+      <p class="sec-sub">
+        Um processo leve, claro e humano — com foco no que está te travando hoje.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <b>1) Conversa e avaliação</b>
+          <p>Entendo sua história, sintomas e rotina para mapear prioridades.</p>
+        </div>
+        <div class="step">
+          <b>2) Protocolo personalizado</b>
+          <p>Definimos o melhor caminho usando auriculoterapia e/ou acupuntura craniana.</p>
+        </div>
+        <div class="step">
+          <b>3) Sessão e orientações</b>
+          <p>Aplicação + orientações simples para você sustentar o resultado no dia a dia.</p>
+        </div>
+        <div class="step">
+          <b>4) Acompanhamento</b>
+          <p>Reavaliações para ajustar e evoluir conforme sua resposta.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px" class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Quero marcar minha avaliação</a>
+        <a class="btn" href="#faq">Tirar dúvidas rápidas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios">
+    <div class="wrap two">
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">O que você pode buscar melhorar</h2>
+        <p class="sec-sub">Sem promessas milagrosas — com foco em progresso real e acompanhamento.</p>
+        <ul class="clean">
+          <li>Mais calma e controle emocional no dia a dia</li>
+          <li>Menos tensão, estresse e sensação de “corpo travado”</li>
+          <li>Melhora do sono e da disposição</li>
+          <li>Redução de desconfortos e dores (conforme cada caso)</li>
+          <li>Mais qualidade de vida e rotina funcional</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">Por que comigo?</h2>
+        <p class="sec-sub">
+          Eu sei como é viver com dor e não encontrar solução rápida. Por isso, meu atendimento é
+          <b>acolhedor, técnico e direto ao ponto</b>.
+        </p>
+        <div class="grid3" style="grid-template-columns:1fr; gap:12px">
+          <div class="mini">
+            <h3>Humanização</h3>
+            <p>Você não precisa “aguentar calado”. Aqui você é ouvido de verdade.</p>
+          </div>
+          <div class="mini">
+            <h3>Plano claro</h3>
+            <p>Você entende o processo, o porquê e o que vamos ajustar.</p>
+          </div>
+          <div class="mini">
+            <h3>Foco em resultado</h3>
+            <p>Acompanhamento e evolução — sem achismo e sem enrolação.</p>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top:14px">
+          <a class="btn btn-primary" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Agendar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVAS -->
+  <section id="depoimentos">
+    <div class="wrap">
+      <h2 class="sec-title">Depoimentos (prova social)</h2>
+      <p class="sec-sub">Troque pelos seus depoimentos reais (texto ou prints).</p>
+
+      <div class="proof">
+        <div class="quote">
+          <p>“[DEPOIMENTO 1]”</p>
+          <small>— Paciente, [inicial], [idade]</small>
+        </div>
+        <div class="quote">
+          <p>“[DEPOIMENTO 2]”</p>
+          <small>— Paciente, [inicial], [idade]</small>
+        </div>
+        <div class="quote">
+          <p>“[DEPOIMENTO 3]”</p>
+          <small>— Paciente, [inicial], [idade]</small>
+        </div>
+        <div class="quote">
+          <p>“[DEPOIMENTO 4]”</p>
+          <small>— Paciente, [inicial], [idade]</small>
+        </div>
+      </div>
+
+      <div class="cta-row" style="margin-top:16px">
+        <a class="btn btn-danger" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Quero conversar sobre meu caso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="sec-title">Dúvidas rápidas</h2>
+      <p class="sec-sub">Se quiser, me chama e eu avalio seu caso no WhatsApp.</p>
+
+      <details>
+        <summary>Para quem é indicado?</summary>
+        <p class="sec-sub" style="margin:10px 0 0">
+          Para pessoas que buscam melhora de dores, estresse, ansiedade, insônia e bem-estar geral.
+          Em casos específicos, avaliamos a necessidade de acompanhamento médico em paralelo.
+        </p>
+      </details>
+
+      <details>
+        <summary>Em quantas sessões eu vejo resultado?</summary>
+        <p class="sec-sub" style="margin:10px 0 0">
+          Depende do caso, rotina e resposta individual. O objetivo é evolução real com acompanhamento
+          e ajustes ao longo do processo.
+        </p>
+      </details>
+
+      <details>
+        <summary>Dói? Tem efeitos colaterais?</summary>
+        <p class="sec-sub" style="margin:10px 0 0">
+          Em geral, são técnicas bem toleradas. Qualquer sensibilidade é avaliada durante o atendimento.
+          Cada pessoa é única — por isso o protocolo é personalizado.
+        </p>
+      </details>
+
+      <details>
+        <summary>Isso substitui médico/remédio?</summary>
+        <p class="sec-sub" style="margin:10px 0 0">
+          Não. É um cuidado integrativo e complementar. Quando necessário, a orientação é manter
+          acompanhamento médico.
+        </p>
+      </details>
+
+      <div class="cta-row" style="margin-top:16px">
+        <a class="btn btn-primary" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Tirar dúvidas no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section>
+    <div class="wrap two">
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">Agendamento</h2>
+        <p class="sec-sub">
+          Clique no botão e mande: <b>“Quero agendar uma avaliação”</b>.
+          Eu vou te responder com horários e orientações.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">Agendar agora</a>
+          <a class="btn" href="#como-funciona">Ver etapas</a>
+        </div>
+        <p class="small">
+          WhatsApp: <b>(45) 99818-7171</b><br/>
+          Endereço: <b>Av. Brasil, 5964 - Sala 121 - 12° andar - Centro, Cascavel - PR, 85801-100</b><br/>
+          Cidade: <b>Cascavel - PR</b><br/>
+          Instagram: <a href="https://www.instagram.com/deliabogadoterapeuta/" target="_blank" rel="noopener"><b>@deliabogadoterapeuta</b></a>
+        </p>
+      </div>
+
+      <div class="card" style="padding:18px">
+        <h2 class="sec-title">Aviso importante</h2>
+        <p class="sec-sub">
+          Terapias integrativas têm objetivo de <b>apoio ao bem-estar</b>. Não há promessa de cura,
+          e os resultados variam. Em sintomas intensos ou persistentes, procure avaliação médica.
+        </p>
+        <div class="mini">
+          <h3>Mensagem pronta</h3>
+          <p>Copie e envie no WhatsApp: <br><br>
+            <b>“Oi, Delia! Quero agendar uma avaliação. Meu principal incômodo hoje é: ____ .”</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div><b>Delia Bogado</b> • Auriculoterapia e Acupuntura Craniana</div>
+        <div>© <span id="year"></span> • Todos os direitos reservados</div>
+      </div>
+      <p class="small" style="margin:10px 0 0">
+        *Conteúdo informativo. Não substitui avaliação profissional individual.*
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA -->
+  <div class="floating">
+    <a class="btn btn-primary" href="https://wa.me/5545998187171?text=Oi%2C%20Delia%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.%20Meu%20principal%20inc%C3%B4modo%20hoje%20%C3%A9%3A%20____.">WhatsApp • Agendar</a>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
